@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ng04SlowControlApp" xmlns:style="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NP04 Slow Control Web Interface</title>
+  <meta name="description" content="">
+  <!--link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css"-->
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+  <script src="dependencies/jquery-3.3.1.min.js"></script>
+  <script src="dependencies/Chart.min.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="cryostat/cryostat.module.js"></script>
+  <script src="cryostat/cryostat.component.js"></script>
+  <script src="inside/inside.module.js"></script>
+  <script src="inside/inside.component.js"></script>
+  <script src="histogram/histogram.module.js"></script>
+  <script src="histogram/histogram.component.js"></script>
+  <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+      function openNav() {
+          document.getElementById("menu").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+          document.getElementById("menu").style.width = "0";
+      }
+  </script>
+</head>
+<body>
+
+  <img src="img/menu_icon.png" onclick="openNav()" style="background-color: floralwhite; width: 50px;"/>
+  <div id="menu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#!/">Home</a>
+    <a href="#!/cryostat">Cryostat</a>
+    <a href="#!/inside">Membranes</a>
+    <a href="mailto:George.Salukvadze@cern.ch">Contact</a>
+  </div>
+  <div ng-view></div>
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+</body>
+</html>
