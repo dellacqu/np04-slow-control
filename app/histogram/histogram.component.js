@@ -4,7 +4,7 @@ angular.module('histogram', []).component('histogram', {
     controller: ['$routeParams', '$http',
         function histogramController($routeParams, $http) {
             this.elemId = $routeParams.elemId;
-            this.pageTitle = "NP04 Cryostat"
+            this.pageTitle = this.elemId;
             this.natalie = 1;
             this.TT0101 = "";
             let self = this;
