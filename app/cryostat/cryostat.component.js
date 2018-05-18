@@ -6,11 +6,6 @@ angular.module('cryostat', []).component('cryostat', {
         this.natalie = 1;
         var self = this;
 
-        this.goToHist = function(display) {
-            window.location = '#!/histogram/' + display;
-            location.reload();
-        }
-
         this.reload = function () {
             var temp0 = $http.get("php-db-conn/cryostat.conn.PT0104.php");
             var temp1 = $http.get("php-db-conn/cryostat.conn.PT0105.php");

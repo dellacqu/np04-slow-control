@@ -1,4 +1,4 @@
 'use strict';
-angular.module('cryostat', [
+angular.module('home', [
     'ngRoute'
 ]);
