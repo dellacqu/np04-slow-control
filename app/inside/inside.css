@@ -1,0 +1,78 @@
+.membrain_container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+#outer_pressure {
+    position: fixed;
+    left: 6%;
+    top: 20%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black";
+    font-size: 18px;
+}
+
+#inner_pressure {
+    position:fixed;
+    left: 6%;
+    top: 40%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black";
+    font-size: 18px;
+}
+
+#inner_pressure_2 {
+    position:fixed;
+    right: 10%;
+    top: 40%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black";
+    font-size: 18px;
+}
+
+#ambient {
+    position: fixed;
+    right: 10%;
+    top: 20%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black";
+    font-size: 18px;
+}
+
+#penetration_pipe {
+    position: fixed;
+    right: 7%;
+    top: 60%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black";
+    font-size: 18px;
+}
+
+#beam_plug {
+    position: fixed;
+    left: 23%;
+    top: 7%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black";
+    font-size: 18px;
+}
+
+#lesker_vacuum_gauge {
+    position: fixed;
+    left: 33%;
+    top: 7%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black";
+    font-size: 18px;
+}
