@@ -7,16 +7,16 @@ angular.module('histogram', []).component('histogram', {
             this.pageTitle = "NP04 Cryostat"
             this.natalie = 1;
             this.TT0101 = "";
-            var self = this;
-            var labels = [];
-            var values = [];
+            let self = this;
+            let labels = [];
+            let values = [];
             $http.get("php-db-conn/histogram.conn.php?elemId=" + this.elemId).then(function (response) {
                 self.elemId = response.data.records;
-                for (var i in self.elemId) {
+                for (let i in self.elemId) {
                     labels.push(self.elemId[i].TimeStamp);
                     values.push(self.elemId[i].ExactValue);
                 }
-                var chartdata = {
+                let chartdata = {
                     labels: labels,
                     datasets : [
                         {
@@ -29,9 +29,9 @@ angular.module('histogram', []).component('histogram', {
                         }
                     ]
                 };
-                var ctx = $('#hist');
+                let ctx = $('#hist');
 
-                var barGraph = new Chart(ctx, {
+                let barGraph = new Chart(ctx, {
                     type: 'line',
                     data: chartdata
                 });

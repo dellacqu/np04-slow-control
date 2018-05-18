@@ -3,7 +3,7 @@ describe('home', function() {
     var controller;
     // Load the module that contains the `phoneList` component before each test
     beforeEach(function() {
-        module('home')
+        module('home');
         // Test the controller
         inject(function(_$rootScope_, $controller) {
 
@@ -21,6 +21,5 @@ describe('home', function() {
 
         })
     });
-    ;
 
 });
