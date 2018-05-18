@@ -47,12 +47,6 @@ a {
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -77,56 +71,6 @@ a {
   font-size: 24px;
 }
 
-#outer_pressure {
-  position: fixed;
-  left: 6%;
-  top: 20%;
-  text-align: right;
-  color: gray;
-  font-family: "Arial Black";
-  font-size: 18px;
-}
-
-#inner_pressure {
-  position:fixed;
-  left: 6%;
-  top: 40%;
-  text-align: right;
-  color: gray;
-  font-family: "Arial Black";
-  font-size: 18px;
-}
-
-#inner_pressure_2 {
-  position:fixed;
-  right: 10%;
-  top: 40%;
-  text-align: right;
-  color: gray;
-  font-family: "Arial Black";
-  font-size: 18px;
-}
-
-#ambient {
-  position: fixed;
-  right: 10%;
-  top: 20%;
-  text-align: right;
-  color: gray;
-  font-family: "Arial Black";
-  font-size: 18px;
-}
-
-#penetration_pipe {
-  position: fixed;
-  right: 7%;
-  top: 60%;
-  text-align: right;
-  color: gray;
-  font-family: "Arial Black";
-  font-size: 18px;
-}
-
 th, td {
   border: 1px solid white;
   color: gray;
@@ -138,30 +82,6 @@ th {
 
 td {
   font-size: 16px;
-}
-
-#penetration {
-
-}
-
-#beam_plug {
-  position: fixed;
-  left: 23%;
-  top: 7%;
-  text-align: right;
-  color: gray;
-  font-family: "Arial Black";
-  font-size: 18px;
-}
-
-#lesker_vacuum_gauge {
-  position: fixed;
-  left: 33%;
-  top: 7%;
-  text-align: right;
-  color: gray;
-  font-family: "Arial Black";
-  font-size: 18px;
 }
 
 #timestamp_label {
@@ -181,31 +101,7 @@ td {
   font-size: 18px;
 }
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
 .value {
   font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   color: lime;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
 }
