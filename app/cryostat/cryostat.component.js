@@ -7,7 +7,7 @@ angular.module('cryostat', []).component('cryostat', {
         var self = this;
 
         this.reload = function () {
-            var temp0 = $http.get("php-db-conn/cryostat.conn.PT0104.php");
+            var temp0 = $http.get("php-db-conn/cryostat.conn.php?elemId=" + PT0104);
             var temp1 = $http.get("php-db-conn/cryostat.conn.PT0105.php");
             var temp2 = $http.get("php-db-conn/cryostat.conn.PT0100.php");
             var temp3 = $http.get("php-db-conn/cryostat.conn.PT0101.php");
