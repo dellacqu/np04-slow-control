@@ -10,7 +10,7 @@ angular.module('histogram', []).component('histogram', {
             var self = this;
             var labels = [];
             var values = [];
-            $http.get("histogram/histogram.conn." + this.elemId + ".php").then(function (response) {
+            $http.get("php-db-conn/histogram.conn." + this.elemId + ".php").then(function (response) {
                 self.elemId = response.data.records;
                 for (var i in self.elemId) {
                     labels.push(self.elemId[i].TimeStamp);
