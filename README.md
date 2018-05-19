@@ -1,6 +1,6 @@
 NP04 Slow Control Application
 
-v0.1
+v0.1*
 
 Consists from several views:
 - Cryostat - main view displyaing a cryostat model with several sensors
