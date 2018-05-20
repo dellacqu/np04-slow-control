@@ -1,10 +1,17 @@
 <style type="text/css">
     #chart-container {
-        width: 100%;
+        width: 80%;
         height: 100%;
     }
 </style>
 
+<div id="timespan" style="position: relative; left: 5%; top: 10%;">
+    <span>History for:</span>
+    <button id="1day" onclick="">1 day</button>
+    <button id="3days">3 days</button>
+    <button id="7days">7 days</button>
+    <button id="all">All</button>
+</div>
 <div id="chart-container">
     <canvas id="hist"></canvas>
 </div>

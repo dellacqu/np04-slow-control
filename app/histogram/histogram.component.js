@@ -4,13 +4,19 @@ angular.module('histogram', []).component('histogram', {
     controller: ['$routeParams', '$http',
         function histogramController($routeParams, $http) {
             this.elemId = $routeParams.elemId;
+            if ($routeParams.days != null) {
+                console.log(this.days);
+                this.days = $routeParams.days;
+            } else {
+                this.days = 3;
+            }
             this.pageTitle = this.elemId;
             this.natalie = 1;
             this.TT0101 = "";
             let self = this;
             let labels = [];
             let values = [];
-            $http.get("php-db-conn/histogram.conn.php?elemId=" + this.elemId).then(function (response) {
+            $http.get("php-db-conn/histogram.conn.php?elemId=" + this.elemId + "&days=" + this.days).then(function (response) {
                 self.elemId = response.data.records;
                 for (let i in self.elemId) {
                     labels.push(self.elemId[i].TimeStamp);

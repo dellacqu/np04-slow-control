@@ -14,7 +14,7 @@ config(['$locationProvider', '$routeProvider',
             when('/inside', {
                 template: '<inside></inside>'
             }).
-            when('/histogram/:elemId', {
+            when('/histogram/:elemId/:days?', {
                 template: '<histogram></histogram>'
             }).
             otherwise('/');
