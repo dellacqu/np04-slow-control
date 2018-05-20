@@ -21,13 +21,17 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "select TS, VALUE_NUMBER from (select * from NP04_DCS_01.VEVENTSCREEN order by TS asc) where ALIAS like '%".$elemId."%' and TS >= sysdate-".$days);
+$stid = oci_parse($conn, "select TS, VALUE_NUMBER from (select * from NP04_DCS_01.VEVENTSCREEN order by TS asc) where ALIAS like '%".$elemId."%' and TS >= sysdate - ".$days);
 oci_execute($stid);
 
 $outp = "";
 while($rs = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-    $outp .= '{"TimeStamp":"'  . $rs["TS"] . '",';
-    $outp .= '"ExactValue":"'. $rs["VALUE_NUMBER"]     . '"},';
+    if ($rs["TS"] != null) {
+        $outp .= '{"TimeStamp":"'  . $rs["TS"] . '",';
+        $outp .= '"ExactValue":"'. $rs["VALUE_NUMBER"]     . '"},';
+    } else {
+        $outp .= 'Error';
+    }
 }
 $outp ='{"records":['.$outp.']}';
 $outp = substr($outp, 0, -3) .substr($outp, -2, 3);
