@@ -91,17 +91,20 @@ td {
   text-align: right;
   color: gray;
   font-family: "Arial Black";
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #timestamp {
   text-align: right;
   color: white;
   font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .value {
+  background-color: #333333;
   font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   color: lime;
+  font-size: 20px;
+  font-weight: bold;
 }
