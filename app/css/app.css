@@ -28,7 +28,7 @@ a {
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  font-family: "Arial Black";
+  font-family: "Arial Black", Gadget, sans-serif;
   display: block;
   transition: 0.3s;
 }
@@ -67,7 +67,7 @@ a {
   margin-left: 3%;
   margin-top: 1%;
   color: white;
-  font-family: "Arial Black";
+  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 24px;
 }
 
@@ -90,7 +90,7 @@ td {
   top: 10%;
   text-align: right;
   color: gray;
-  font-family: "Arial Black";
+  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 22px;
 }
 

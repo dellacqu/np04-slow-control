@@ -4,7 +4,7 @@
     top: 20%;
     text-align: right;
     color: gray;
-    font-family: "Arial Black";
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 18px;
 }
 
@@ -14,7 +14,7 @@
     top: 40%;
     text-align: right;
     color: gray;
-    font-family: "Arial Black";
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 18px;
 }
 
@@ -24,7 +24,7 @@
     top: 40%;
     text-align: right;
     color: gray;
-    font-family: "Arial Black";
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 18px;
 }
 
@@ -34,7 +34,7 @@
     top: 20%;
     text-align: right;
     color: gray;
-    font-family: "Arial Black";
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 18px;
 }
 
@@ -44,7 +44,7 @@
     top: 60%;
     text-align: right;
     color: gray;
-    font-family: "Arial Black";
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 18px;
 }
 
@@ -54,7 +54,7 @@
     top: 7%;
     text-align: right;
     color: gray;
-    font-family: "Arial Black";
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 18px;
 }
 
@@ -64,6 +64,6 @@
     top: 7%;
     text-align: right;
     color: gray;
-    font-family: "Arial Black";
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 18px;
 }
