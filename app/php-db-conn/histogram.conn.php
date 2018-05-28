@@ -30,9 +30,6 @@ while($rs = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     $outp .= '"ExactValue":"'. $rs["VALUE_NUMBER"]     . '"},';
 }
     $outp ='{"records":['.$outp.']}';
-    if ($outp == '{"records":]}') {
-        $outp = '{"records": []}';
-    }
     $outp = substr($outp, 0, -3) .substr($outp, -2, 3);
 oci_close($conn);
 
