@@ -1,4 +1,7 @@
 'use strict';
 angular.module('histogram', [
-    'ngRoute'
+    'ngRoute',
+    'tld.csvDownload',
+    'ngSanitize',
+    'ngCsv'
 ]);

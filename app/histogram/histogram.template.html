@@ -12,7 +12,18 @@
     <button id="3days" type="button" ng-click="dayChanger(3)">3 days</button>
     <button id="7days" type="button" ng-click="dayChanger(7)">7 days</button>
     <button id="all"  onclick="#!/histogram/">All</button>
+
 </div>
 <div id="chart-container">
     <canvas id="hist"></canvas>
 </div>
+<button class="btn" title="Click to show/hide data" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/hide data</button>
+<span id="spoiler" style="display: none;"><table style="font-family: 'Arial Black'">
+    <th>Timestamp</th>
+    <th>Exact value</th>
+    <tr ng-repeat="i in $ctrl.respdata">
+        <td>{{i.TimeStamp}}</td>
+        <td align="right" style="color: lime; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;">{{i.ExactValue | number: 2}}</td>
+    </tr>
+</table></span>
+

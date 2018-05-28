@@ -12,9 +12,10 @@ angular.module('histogram', []).component('histogram', {
             }
             this.pageTitle = this.elemId;
             this.natalie = 1;
+            this.respdata = [];
             let self = this;
-            let labels = [];
-            let values = [];
+            this.labels = [];
+            this.values = [];
 
             this.dayChanger = function (fundays) {
                 console.log(fundays);
@@ -22,17 +23,17 @@ angular.module('histogram', []).component('histogram', {
                 $http.get(url).then(function() {
                     $http.get("php-db-conn/histogram.conn.php?elemId=" + self.elemId + "&days=" + fundays).then(function (response) {
                         let title = self.elemId;
-                        let respdata = response.data.records;
-                        if (respdata == '{"records":]}') {
+                        self.respdata = response.data.records;
+                        if (self.respdata == '{"records":]}') {
                             console.log("JSON error");
                             this.dayChanger(7);
                         } else {
-                            for (let i in respdata) {
-                                labels.push(moment((respdata[i].TimeStamp), "DD-MMM-YYYY hh.mm.ss.SSSSSSSSS A"));
-                                values.push(respdata[i].ExactValue);
+                            for (let i in self.respdata) {
+                                self.labels.push(moment((self.respdata[i].TimeStamp), "DD-MMM-YYYY hh.mm.ss.SSSSSSSSS A"));
+                                self.values.push(self.respdata[i].ExactValue);
                             }
                             let chartdata = {
-                                labels: labels,
+                                labels: self.labels,
                                 datasets: [
                                     {
                                         label: title,
@@ -43,7 +44,7 @@ angular.module('histogram', []).component('histogram', {
                                         borderColor: 'rgba(200, 0, 0, 0.75)',
                                         hoverBackgroundColor: 'rgba(200, 0, 0, 1)',
                                         hoverBorderColor: 'rgba(200, 0, 0, 1)',
-                                        data: values
+                                        data: self.values
                                     }
                                 ]
                             };
@@ -112,6 +113,8 @@ angular.module('histogram', []).component('histogram', {
                     });
                 });
             };
+
+            console.log("respdata: " + this.respdata);
             this.dayChanger(this.days);
 
         }
