@@ -27,7 +27,8 @@ angular.module('histogram', []).component('histogram', {
             $http.get("php-db-conn/histogram.conn.php?elemId=" + self.elemId + "&days=" + fundays).then(function (response) {
                 let title = self.elemId;
                 self.respdata = response.data.records;
-                if (self.respdata == '{"records":]}') {
+                console.log(response.data);
+                if (response.data == '{"records":]}') {
                     console.log("JSON error");
                     this.dayChanger(7);
                 } else {
@@ -114,7 +115,6 @@ angular.module('histogram', []).component('histogram', {
                     });
                 }
             });
-            console.log("respdata: " + this.respdata);
 
         }
     ]
