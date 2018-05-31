@@ -1,8 +1,8 @@
 'use strict';
 angular.module('zmonitor', []).component('zmonitor', {
     templateUrl: 'zmonitor/zmonitor.template.html',
-    controller: function insideController($http, $q, $interval) {
-        this.pageTitle = "NP04 Membranes";
+    controller: function zmonitorController($http, $q, $interval) {
+        this.pageTitle = "NP04 Ground impedance monitor";
         this.natalie = 1;
         this.TT0101 = "";
         let self = this;
