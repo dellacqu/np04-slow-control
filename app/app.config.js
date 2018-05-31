@@ -17,6 +17,9 @@ config(['$locationProvider', '$routeProvider',
             when('/histogram/:elemId/:days?', {
                 template: '<histogram></histogram>'
             }).
+            when('/zmonitor', {
+                template: '<zmonitor></zmonitor>'
+            }).
             otherwise('/');
     }
 ]);

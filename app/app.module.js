@@ -5,5 +5,6 @@ angular.module('ng04SlowControlApp', [
     'home',
     'histogram',
     'inside',
+    'zmonitor',
     'cryostat'
 ]);
