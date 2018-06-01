@@ -10,6 +10,11 @@ angular.module('histogram', []).component('histogram', {
             } else {
                 this.days = 3;
             }
+            if ($routeParams.type != null) {
+                this.type = $routeParams.type;
+            } else {
+                this.type = 0;
+            }
             this.pageTitle = this.elemId;
             this.natalie = 1;
             this.respdata = [];
@@ -19,12 +24,12 @@ angular.module('histogram', []).component('histogram', {
             let fundays = this.days;
 
             this.dayChanger = function(funcdays) {
-                $window.location.href = "#!/histogram/" + this.elemId + "/" + funcdays;
+                $window.location.href = "#!/histogram/" + this.elemId + "/" + funcdays + "/" + this.type;
                 console.log($window.location.href);
             }
 
             console.log(fundays);
-            $http.get("php-db-conn/histogram.conn.php?elemId=" + self.elemId + "&days=" + fundays).then(function (response) {
+            $http.get("php-db-conn/histogram.conn.php?elemId=" + self.elemId + "&days=" + fundays + "&type=" + self.type).then(function (response) {
                 let title = self.elemId;
                 self.respdata = response.data.records;
                 console.log(response.data);
@@ -89,9 +94,9 @@ angular.module('histogram', []).component('histogram', {
                                     time: {
                                         tooltipFormat: "DD/MM/YYYY HH:mm:ss",
                                         displayFormats: {
-                                            millisecond: "HH:mm:ss.SSS",
-                                            second: "HH:mm:ss",
-                                            minute: "HH:mm",
+                                            millisecond: "DD/MM HH:mm:ss.SSS",
+                                            second: "DD/MM HH:mm:ss",
+                                            minute: "DD/MM HH:mm",
                                             hour: "DD/MM HH:mm",
                                             day: "DD/MM/YYYY",
                                             week: "DD/MM",

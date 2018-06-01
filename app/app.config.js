@@ -14,7 +14,7 @@ config(['$locationProvider', '$routeProvider',
             when('/inside', {
                 template: '<inside></inside>'
             }).
-            when('/histogram/:elemId/:days?', {
+            when('/histogram/:elemId/:days?/:type?', {
                 template: '<histogram></histogram>'
             }).
             when('/zmonitor', {

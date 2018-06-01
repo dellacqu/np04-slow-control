@@ -9,8 +9,8 @@
 
 #RES {
     position: fixed;
-    left: 33%;
-    top: 15%;
+    left: 25%;
+    top: 45%;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -19,8 +19,8 @@
 
 #TH {
     position: fixed;
-    left: 37%;
-    top: 15%;
+    left: 35%;
+    top: 45%;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -29,8 +29,8 @@
 
 #mag {
     position: fixed;
-    left: 37%;
-    top: 15%;
+    left: 45%;
+    top: 45%;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -39,8 +39,8 @@
 
 #I {
     position: fixed;
-    left: 37%;
-    top: 15%;
+    left: 55%;
+    top: 45%;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -49,8 +49,8 @@
 
 #Q {
     position: fixed;
-    left: 37%;
-    top: 15%;
+    left: 65%;
+    top: 45%;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;

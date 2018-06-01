@@ -20,7 +20,7 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "select VALUE_NUMBER from (select * from NP04_DCS_01.VEVENTSCREEN order by TS desc) where ALIAS like '%".$elemId."%' AND rownum = 1");
+$stid = oci_parse($conn, "select VALUE_NUMBER from (select * from NP04_DCS_01.VEVENTSCREEN order by TS desc) where ELEMENT_NAME like '%".$elemId."%' AND rownum = 1");
 oci_execute($stid);
 
 $outp = "";

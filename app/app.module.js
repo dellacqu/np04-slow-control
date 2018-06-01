@@ -4,7 +4,7 @@ angular.module('ng04SlowControlApp', [
     'ngRoute',
     'home',
     'histogram',
-    'inside',
     'zmonitor',
+    'inside',
     'cryostat'
 ]);
