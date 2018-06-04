@@ -1,0 +1,58 @@
+.zmonitor_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+#RES {
+    position: fixed;
+    left: 25%;
+    top: 45%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+}
+
+#TH {
+    position: fixed;
+    left: 35%;
+    top: 45%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+}
+
+#mag {
+    position: fixed;
+    left: 45%;
+    top: 45%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+}
+
+#I {
+    position: fixed;
+    left: 55%;
+    top: 45%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+}
+
+#Q {
+    position: fixed;
+    left: 65%;
+    top: 45%;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+}
