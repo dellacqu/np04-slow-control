@@ -7,52 +7,85 @@
     margin: 0;
 }
 
-#RES {
+.crate_link {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.selection {
+    color: #dddddd;
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 4.5vmin;
+}
+
+.selection table {
+    border: 0px;
+}
+
+.selection td {
+    border: 2.5px solid white;
+}
+
+.selection a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 3.5vmin;
+}
+
+.wibs {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #dddddd;
+}
+
+.wibs th {
+    color: #dddddd;
+    font-size: 3.5vmin;
+}
+
+.wibs table {
+    color: #dddddd;
+}
+
+.wibs td {
+    color: #dddddd;
+    font-size: 2.5vmin;
+}
+
+.wibs a {
+    color: #dddddd;
+}
+
+#femb1 {
+    position: fixed;
+    left: 10%;
+    top: 25%;
+    text-align: center;
+
+}
+
+#femb2 {
     position: fixed;
     left: 25%;
-    top: 45%;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    top: 25%;
+    text-align: center;
+
 }
 
-#TH {
+#femb3 {
     position: fixed;
-    left: 35%;
-    top: 45%;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    left: 40%;
+    top: 25%;
+    text-align: center;
+
 }
 
-#mag {
-    position: fixed;
-    left: 45%;
-    top: 45%;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
-}
-
-#I {
+#femb4 {
     position: fixed;
     left: 55%;
-    top: 45%;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
-}
+    top: 25%;
+    text-align: center;
 
-#Q {
-    position: fixed;
-    left: 65%;
-    top: 45%;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
 }

@@ -5,7 +5,7 @@ angular.module('wib', []).component('wib', {
         function wibController($routeParams, $q, $http, $window, $interval) {
             this.crateId = $routeParams.crateId;
             this.wibId = $routeParams.wibId;
-            this.pageTitle = "Crate " + this.crateId + " WIB " + this.wobOd;
+            this.pageTitle = "Crate " + this.crateId + " WIB " + this.wibId;
             this.natalie = 1;
             this.TT0101 = "";
             let self = this;
