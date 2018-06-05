@@ -14,7 +14,7 @@
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    font-size: 2.7vmin;
 }
 
 #inner_pressure {
@@ -24,7 +24,7 @@
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    font-size: 2.7vmin;
 }
 
 #inner_pressure_2 {
@@ -34,7 +34,7 @@
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    font-size: 2.7vmin;
 }
 
 #ambient {
@@ -44,7 +44,7 @@
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    font-size: 2.7vmin;
 }
 
 #penetration_pipe {
@@ -54,7 +54,7 @@
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    font-size: 2.7vmin;
 }
 
 #beam_plug {
@@ -64,7 +64,7 @@
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    font-size: 2.7vmin;
 }
 
 #lesker_vacuum_gauge {
@@ -74,5 +74,5 @@
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 18px;
+    font-size: 2.7vmin;
 }
