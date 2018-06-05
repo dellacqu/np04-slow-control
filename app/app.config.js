@@ -20,10 +20,10 @@ config(['$locationProvider', '$routeProvider',
             when('/zmonitor', {
                 template: '<zmonitor></zmonitor>'
             }).
-            when('/crate', {
+            when('/crate/:crateId', {
                 template: '<crate></crate>'
             }).
-            when('/wib', {
+            when('/wib/:crateId/:wibId', {
                 template: '<wib></wib>'
             }).
             otherwise('/');

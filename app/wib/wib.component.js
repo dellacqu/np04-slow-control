@@ -1,7 +1,7 @@
 'use strict';
 angular.module('wib', []).component('wib', {
     templateUrl: 'wib/wib.template.html',
-    controller: function wibController($http, $q, $interval) {
+    controller: function wibController($routeparams, $http, $q, $interval) {
         this.pageTitle = "NP04 Ground impedance monitor";
         this.natalie = 1;
         this.TT0101 = "";
