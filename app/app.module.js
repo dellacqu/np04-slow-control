@@ -8,5 +8,6 @@ angular.module('ng04SlowControlApp', [
     'inside',
     'crate',
     'wib',
+    'mpodpd',
     'cryostat'
 ]);
