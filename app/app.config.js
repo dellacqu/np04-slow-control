@@ -28,7 +28,10 @@ config(['$locationProvider', '$routeProvider',
         }).
         when('/mpodpd', {
             template: '<mpodpd></mpodpd>'
-        }),
-            otherwise('/');
+        }).
+        when('/camera', {
+            template: '<camera></camera>'
+        }).
+        otherwise('/');
     }
 ]);

@@ -9,5 +9,6 @@ angular.module('ng04SlowControlApp', [
     'crate',
     'wib',
     'mpodpd',
+    'camera',
     'cryostat'
 ]);
