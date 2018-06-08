@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="css/crate.css">
+<link rel="stylesheet" href="css/VLCPlayer.css">
 <div class="crate_container">
     <div id="pageTitle">{{$ctrl.pageTitle}}</div>
     <img src="http://protodune-dp01.cern.ch/video1.mjpeg" style="position: absolute; top: 20%; left: 10%; width: 70%;"></img>
+    <vlcplayer vlc-url="rtsp://protodune-dp01.cern.ch:554" vlc-filename="live1.sdp" vlc-autoplay="true"></vlcplayer>
 </div>

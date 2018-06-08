@@ -9,7 +9,7 @@
 
 #RES {
     position: fixed;
-    left: 25%;
+    left: 20%;
     top: 45%;
     text-align: right;
     color: gray;
@@ -29,7 +29,7 @@
 
 #mag {
     position: fixed;
-    left: 45%;
+    left: 50%;
     top: 45%;
     text-align: right;
     color: gray;
@@ -39,7 +39,7 @@
 
 #I {
     position: fixed;
-    left: 55%;
+    left: 65%;
     top: 45%;
     text-align: right;
     color: gray;
@@ -49,7 +49,7 @@
 
 #Q {
     position: fixed;
-    left: 65%;
+    left: 80%;
     top: 45%;
     text-align: right;
     color: gray;
