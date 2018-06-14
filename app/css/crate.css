@@ -18,7 +18,7 @@
     top: 10%;
     left: 25%;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 4.5vmin;
+    font-size: 3.5vmin;
 }
 
 .selection table {
@@ -32,7 +32,7 @@
 .selection a {
     color: #dddddd;
     text-decoration: none;
-    font-size: 3.5vmin;
+    font-size: 2.5vmin;
 }
 
 .wibs {
@@ -42,7 +42,7 @@
 
 .wibs th {
     color: #dddddd;
-    font-size: 3.5vmin;
+    font-size: 2.5vmin;
 }
 
 .wibs table {
@@ -51,7 +51,7 @@
 
 .wibs td {
     color: #dddddd;
-    font-size: 2.5vmin;
+    font-size: 2.0vmin;
 }
 
 .wibs a {

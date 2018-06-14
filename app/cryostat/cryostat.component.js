@@ -16,7 +16,7 @@ angular.module('cryostat', []).component('cryostat', {
             let temp6 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_MHT0100AI");
             let temp7 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_TT0100AI");
             let temp8 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_PT0106AI");
-            let temp9 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_PT0102AI");
+            let temp9 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_PT0102AIR");
             let temp10 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_PT0103AI");
             let temp11 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_7TT0200AIR");
             let temp12 = $http.get("php-db-conn/cryostat.conn.php?elemId=NP04_7TT0201AIR");
@@ -53,6 +53,6 @@ angular.module('cryostat', []).component('cryostat', {
         };
 
         this.reload();
-        $interval(this.reload, 600000);
+        $interval(this.reload, 15000);
     }
 });

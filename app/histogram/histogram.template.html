@@ -1,7 +1,7 @@
 <style type="text/css">
     #chart-container {
-        width: 90%;
-        height: 90%;
+        width: 100vw;
+        height: 100%;
     }
 </style>
 
@@ -12,6 +12,7 @@
     <button id="3days" type="button" ng-click="$ctrl.dayChanger(3)">3 days</button>
     <button id="7days" type="button" ng-click="$ctrl.dayChanger(7)">7 days</button>
     <button id="10days" type="button" ng-click="$ctrl.dayChanger(10)">10 days</button>
+    <button id="reset-zoom" type="button" ng-click="$ctrl.chart.resetZoom()">Reset zoom</button>
 
 </div>
 <div id="chart-container">

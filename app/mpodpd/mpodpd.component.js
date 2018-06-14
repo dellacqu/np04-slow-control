@@ -4,7 +4,7 @@ angular.module('mpodpd', []).component('mpodpd', {
     controller: ['$routeParams', '$q', '$http', '$window', '$interval',
         function mpodpdController($routeParams, $q, $http, $window, $interval) {
         this.mpodpdId = $routeParams.mpodpdId;
-        this.pageTitle = "mpodpd " + this.mpodpdId;
+        this.pageTitle = "Photon detectors";
         this.natalie = 1;
         this.TT0101 = "";
         let self = this;
@@ -12,7 +12,7 @@ angular.module('mpodpd', []).component('mpodpd', {
         this.mpodpdChanger = function(crId) {
             $window.location.href = "#!/mpodpd/" + crId;
             console.log($window.location.href);
-        }
+        };
 
         this.reload = function () {
             let mpodpd0_slot1_temp = $http.get("php-db-conn/mpodpd.conn.php?elemId=NP04_DCS_01:WIB_mpodpd" + self.mpodpdId + "_slot1.POWER.WIB.TEMP");
