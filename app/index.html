@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="ng04SlowControlApp" xmlns:style="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>NP04 Slow Control Web Interface</title>
-  <meta name="description" content="">
-  <link rel="stylesheet" href="css/app.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
-  <script src="dependencies/jquery-3.3.1.min.js"></script>
-  <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
-  <script src="dependencies/csv-download.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.min.js"></script>
-  <script src="dependencies/ng-csv.js"></script>
-  <script src="dependencies/Chart.min.js"></script>
-  <script src="dependencies/VLCPlayer.js"></script>
-  <script src="dependencies/chartjs-plugin-zoom.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NP04 Slow Control Web Interface</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+    <script src="dependencies/jquery-3.3.1.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="dependencies/csv-download.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.min.js"></script>
+    <script src="dependencies/ng-csv.js"></script>
+    <script src="dependencies/Chart.min.js"></script>
+    <script src="dependencies/VLCPlayer.js"></script>
+    <script src="dependencies/chartjs-plugin-zoom.js"></script>
     <script src="dependencies/hammer.js"></script>
-  <script src="app.module.js"></script>
-  <script src="app.config.js"></script>
-  <script src="home/home.module.js"></script>
-  <script src="home/home.component.js"></script>
-  <script src="cryostat/cryostat.module.js"></script>
-  <script src="cryostat/cryostat.component.js"></script>
-  <script src="inside/inside.module.js"></script>
-  <script src="inside/inside.component.js"></script>
-  <script src="histogram/histogram.module.js"></script>
-  <script src="histogram/histogram.component.js"></script>
-  <script src="zmonitor/zmonitor.module.js"></script>
-  <script src="zmonitor/zmonitor.component.js"></script>
-  <script src="crate/crate.module.js"></script>
-  <script src="crate/crate.component.js"></script>
-  <script src="wib/wib.module.js"></script>
-  <script src="wib/wib.component.js"></script>
-  <script src="mpodpd/mpodpd.module.js"></script>
-  <script src="mpodpd/mpodpd.component.js"></script>
-  <script src="camera/camera.module.js"></script>
-  <script src="camera/camera.component.js"></script>
-  <script>
-      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-      function openNav() {
-          document.getElementById("menu").style.width = "250px";
-      }
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="home/home.module.js"></script>
+    <script src="home/home.component.js"></script>
+    <script src="cryostat/cryostat.module.js"></script>
+    <script src="cryostat/cryostat.component.js"></script>
+    <script src="inside/inside.module.js"></script>
+    <script src="inside/inside.component.js"></script>
+    <script src="histogram/histogram.module.js"></script>
+    <script src="histogram/histogram.component.js"></script>
+    <script src="zmonitor/zmonitor.module.js"></script>
+    <script src="zmonitor/zmonitor.component.js"></script>
+    <script src="crate/crate.module.js"></script>
+    <script src="crate/crate.component.js"></script>
+    <script src="wib/wib.module.js"></script>
+    <script src="wib/wib.component.js"></script>
+    <script src="mpodpd/mpodpd.module.js"></script>
+    <script src="mpodpd/mpodpd.component.js"></script>
+    <script src="camera/camera.module.js"></script>
+    <script src="camera/camera.component.js"></script>
+    <script src="bellegarde/bellegarde.module.js"></script>
+    <script src="bellegarde/bellegarde.component.js"></script>
+    <script src="jura/jura.module.js"></script>
+    <script src="jura/jura.component.js"></script>
+    <script src="lausanne/lausanne.module.js"></script>
+    <script src="lausanne/lausanne.component.js"></script>
+    <script src="saleve/saleve.module.js"></script>
+    <script src="saleve/saleve.component.js"></script>
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("menu").style.width = "250px";
+        }
 
-      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-      function closeNav() {
-          document.getElementById("menu").style.width = "0";
-      }
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("menu").style.width = "0";
+        }
 
-      function submenu() {
-          if (document.getElementById("submenu").style.display == "none") {
-              document.getElementById("submenu").style.display = "block";
-          } else {
-              document.getElementById("submenu").style.display = "none";
-          }
-      }
+        function submenu() {
+            if (document.getElementById("submenu").style.display == "none") {
+                document.getElementById("submenu").style.display = "block";
+            } else {
+                document.getElementById("submenu").style.display = "none";
+            }
+        }
 
-  </script>
+    </script>
 </head>
 <body>
 
-  <img src="img/menu_icon.png" onclick="openNav()" style="background-color: floralwhite; width: 50px;"/>
-  <div id="menu" class="sidenav">
+<img src="img/menu_icon.png" onclick="openNav()" style="background-color: floralwhite; width: 50px;"/>
+<div id="menu" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#!/">Home</a>
-          <a href="#!/cryostat">Cryostat</a><img src="img/down-arrow.png" onclick="submenu()"/>
-          <span id="submenu">
+    <a href="#!/">Home</a>
+    <a href="#!/cryostat">Cryostat</a><img src="img/down-arrow.png" onclick="submenu()"/>
+    <span id="submenu">
             <ul>
               <a href="#!/jura">Jura side</a>
               <a href="#!/lausanne">Lausanne side</a>
@@ -73,15 +81,15 @@
               <a href="#!/bellegarde">Bellegarde side</a>
           </ul>
               </span>
-          <a href="#!/inside">Membranes</a>
-          <a href="#!/zmonitor">Z-monitor</a>
-          <a href="#!/crate/1">WIB crates</a>
-          <a href="#!/mpodpd">Photon Detectors</a>
-          <a href="#!/camera">Live Stream</a>
-          <a href="mailto:George.Salukvadze@cern.ch">Contact</a>
+    <a href="#!/inside">Membranes</a>
+    <a href="#!/zmonitor">Z-monitor</a>
+    <a href="#!/crate/1">WIB crates</a>
+    <a href="#!/mpodpd">Photon Detectors</a>
+    <a href="#!/camera">Live Stream</a>
+    <a href="mailto:George.Salukvadze@cern.ch">Contact</a>
 
-  </div>
-  <div ng-view></div>
+</div>
+<div ng-view></div>
 
 </body>
 </html>

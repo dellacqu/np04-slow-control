@@ -1,0 +1,96 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+#detector {
+    display: block;
+    position: fixed;
+    top: 30vh;
+    left: 17vw;
+    width: 65%;
+}
+
+#outer_pressure {
+    position: fixed;
+    left: 6vw;
+    top: 20vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}
+
+#inner_pressure {
+    position:fixed;
+    left: 6vw;
+    top: 40vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}
+
+#inner_pressure_2 {
+    position:fixed;
+    left: 4.5vw;
+    top: 55vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}
+
+#ambient_diff {
+    position: fixed;
+    left: 5.0vw;
+    top: 70vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}
+
+#ambient {
+    position: fixed;
+    right: 10vw;
+    top: 20vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}
+
+#penetration_pipe {
+    position: fixed;
+    right: 7vw;
+    top: 65vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}
+
+#beam_plug {
+    position: fixed;
+    left: 30vw;
+    top: 7vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}
+
+#lesker_vacuum_gauge {
+    position: fixed;
+    left: 45vw;
+    top: 7vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+}

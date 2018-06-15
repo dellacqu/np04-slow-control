@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="css/saleve.css">
+<div class="container">
+    <div id="pageTitle">{{$ctrl.pageTitle}}</div>
+    <img id="detector" src="img/saleve.png" alt="saleve"/>
+
+    <div id="outer_pressure">Outer pressure ABS:<br/><a target="_blank" href="#!/histogram/NP04_PT0104AI"><span class="value">{{ $ctrl.NP04_PT0104AI[0].Mnish | number: 1 }} mbar</span></a><br/>Outer pressure Diff:<br/><a target="_blank" href="#!/histogram/NP04_PT0105AI"><span class="value">{{ $ctrl.NP04_PT0105AI[0].Mnish | number: 1 }} mbar</span></a></div>
+    <div id="inner_pressure">Inner pressure ABS:<br/><a target="_blank" href="#!/histogram/NP04_PT0100AI"><span class="value">{{ $ctrl.NP04_PT0100AI[0].Mnish | number: 1 }} mbar</span></a><br/>Inner pressure Diff:<br/><a target="_blank" href="#!/histogram/NP04_PT0101AI"><span class="value">{{ $ctrl.NP04_PT0101AI[0].Mnish | number: 1 }} mbar</span></a></div>
+    <div id="ambient_diff"><span style="font-size: 2.3vmin">Difference with<br/>ambient pressure:</span><br/>Outer pressure:<br/><span class="value">{{ $ctrl.NP04_PT0106AI[0].Mnish * 1000 - $ctrl.NP04_PT0104AI[0].Mnish | number: 1 }} mbar</span><br/>Inner pressure:<br/><span class="value">{{ $ctrl.NP04_PT0106AI[0].Mnish * 1000 - $ctrl.NP04_PT0100AI[0].Mnish | number: 1 }} mbar</span><br/>Inner pressure 2:<br/><span class="value">{{ $ctrl.NP04_PT0106AI[0].Mnish * 1000 - $ctrl.NP04_PT0102AI[0].Mnish | number: 1 }} mbar</span></div>
+    <div id="beam_plug">Beam plug:<br/><a target="_blank" href="#!/histogram/NP04_2PT0100AIR"><span class="value">{{ $ctrl.NP04_2PT0100AIR[0].Mnish | number: 1 }} mbar</span></a></div>
+    <div id="lesker_vacuum_gauge">Lesker vacuum gauge:<br/><a target="_blank" href="#!/histogram/NP04_2TT0100AIR"><span class="value">{{ $ctrl.NP04_2TT0100AIR[0].Mnish | number: 1 }} V</span></a></div>
+    <div id="timestamp_label">Timestamp:<br/><span id="timestamp">{{ $ctrl.timestamp[0].Mnish }}</span></div>
+    <div id="ambient">Humidity:<br/><a target="_blank" href="#!/histogram/NP04_MHT0100AI"><span class="value">{{ $ctrl.NP04_MHT0100AI[0].Mnish | number: 1 }} %</span></a><br/>Ambient temperature:<br/><a target="_blank" href="#!/histogram/NP04_TT0100AI"><span class="value">{{ $ctrl.NP04_TT0100AI[0].Mnish | number: 1 }} &#8451;</span></a><br/>Ambient pressure:<br/><a target="_blank" href="#!/histogram/NP04_PT0106AI"><span class="value">{{ $ctrl.NP04_PT0106AI[0].Mnish * 1000 | number: 1 }} mbar</span></a></div>
+    <div id="inner_pressure_2">Inner Pressure ABS 2:<br/><a target="_blank" href="#!/histogram/NP04_PT0102AI"><span class="value">{{ $ctrl.NP04_PT0102AI[0].Mnish | number: 1 }} mbar</span></a><br/>Inner Pressure Diff 2:<br/><a target="_blank" href="#!/histogram/NP04_PT0103AI"><span class="value">{{ $ctrl.NP04_PT0103AI[0].Mnish | number: 1 }} mbar</span></a></div>
+    <div id="penetration_pipe">
+        <table id="penetration">
+            <tr>
+                <th>Pen. Pipe 33.1</th>
+                <th>Pen. Pipe 33.2</th>
+            </tr>
+            <tr>
+                <td>TT0200: <a target="_blank" href="#!/histogram/NP04_7TT0200AIR"><span class="value">{{ $ctrl.NP04_7TT0200AIR[0].Mnish | number: 1 }} &#8490;</span></a><br/>
+                    TT0201: <a target="_blank" href="#!/histogram/NP04_7TT0201AIR"><span class="value">{{ $ctrl.NP04_7TT0201AIR[0].Mnish | number: 1 }} &#8490;</span></a><br/>
+                    TT0202: <a target="_blank" href="#!/histogram/NP04_7TT0202AIR"><span class="value">{{ $ctrl.NP04_7TT0202AIR[0].Mnish | number: 1 }} &#8490;</span></a></td>
+                <td>TT0206: <a target="_blank" href="#!/histogram/NP04_7TT0206AIR"><span class="value">{{ $ctrl.NP04_7TT0206AIR[0].Mnish | number: 1 }} &#8490;</span></a></td>
+            </tr>
+        </table>
+        <table id="penetration_2">
+            <tr>
+                <th>Pen. Pipe 33.3</th>
+                <th>Pen. Pipe 33.4</th>
+            </tr>
+            <tr>
+                <td>TT0212: <a target="_blank" href="#!/histogram/NP04_7TT0212AIR"><span class="value">{{ $ctrl.NP04_7TT0212AIR[0].Mnish | number: 1 }} &#8490;</span></a><br/>
+                    TT0214: <a target="_blank" href="#!/histogram/NP04_7TT0214AIR"><span class="value">{{ $ctrl.NP04_7TT0214AIR[0].Mnish | number: 1 }} &#8490;</span></a></td>
+                <td>TT0218: <a target="_blank" href="#!/histogram/NP04_7TT0218AIR"><span class="value">{{ $ctrl.NP04_7TT0218AIR[0].Mnish | number: 1 }} &#8490;</span></a><br/>
+                    TT0219: <a target="_blank" href="#!/histogram/NP04_7TT0219AIR"><span class="value">{{ $ctrl.NP04_7TT0219AIR[0].Mnish | number: 1 }} &#8490;</span></a></td>
+            </tr>
+        </table>
+    </div>
+</div>

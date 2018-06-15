@@ -32,6 +32,18 @@ config(['$locationProvider', '$routeProvider',
         when('/camera', {
             template: '<camera></camera>'
         }).
+        when('/bellegarde', {
+            template: '<bellegarde></bellegarde>'
+        }).
+        when('/jura', {
+            template: '<jura></jura>'
+        }).
+        when('/lausanne', {
+            template: '<lausanne></lausanne>'
+        }).
+        when('/saleve', {
+            template: '<saleve></saleve>'
+        }).
         otherwise('/');
     }
 ]);

@@ -10,5 +10,9 @@ angular.module('ng04SlowControlApp', [
     'wib',
     'mpodpd',
     'camera',
-    'cryostat'
+    'cryostat',
+    'bellegarde',
+    'jura',
+    'lausanne',
+    'saleve'
 ]);
