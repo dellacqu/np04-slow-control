@@ -19,7 +19,7 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, 'select to_char(max(TS), \'DD-Mon-YYYY HH24:MM:SS\') as TS from NP04_DCS_01.VEVENTSCREEN where ALIAS like \'%MHT01%\' or ALIAS like \'%PT01%\' or ALIAS like \'%TT02%\''');
+$stid = oci_parse($conn, 'select to_char(max(TS), \'DD-Mon-YYYY HH24:MM:SS\') as TS from NP04_DCS_01.VEVENTSCREEN where ALIAS like \'%MHT01%\' or ALIAS like \'%PT01%\' or ALIAS like \'%TT02%\'');
 oci_execute($stid);
 
 $outp = "";
