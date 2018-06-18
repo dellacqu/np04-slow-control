@@ -2,7 +2,7 @@
 angular.module('lausanne', []).component('lausanne', {
     templateUrl: 'lausanne/lausanne.template.html',
     controller: function lausanneController($http, $q, $interval) {
-        this.pageTitle = "NP04 lausanne";
+        this.pageTitle = "NP04 Lausanne side";
         this.natalie = 1;
         let self = this;
 

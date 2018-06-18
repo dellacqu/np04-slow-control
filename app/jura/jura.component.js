@@ -2,7 +2,7 @@
 angular.module('jura', []).component('jura', {
     templateUrl: 'jura/jura.template.html',
     controller: function juraController($http, $q, $interval) {
-        this.pageTitle = "NP04 jura";
+        this.pageTitle = "NP04 Jura side";
         this.natalie = 1;
         let self = this;
 

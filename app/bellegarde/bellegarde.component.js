@@ -2,7 +2,7 @@
 angular.module('bellegarde', []).component('bellegarde', {
     templateUrl: 'bellegarde/bellegarde.template.html',
     controller: function bellegardeController($http, $q, $interval) {
-        this.pageTitle = "NP04 bellegarde";
+        this.pageTitle = "NP04 Bellegarde side";
         this.natalie = 1;
         let self = this;
 

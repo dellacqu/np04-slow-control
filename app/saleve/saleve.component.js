@@ -2,7 +2,7 @@
 angular.module('saleve', []).component('saleve', {
     templateUrl: 'saleve/saleve.template.html',
     controller: function saleveController($http, $q, $interval) {
-        this.pageTitle = "NP04 saleve";
+        this.pageTitle = "NP04 Saleve";
         this.natalie = 1;
         let self = this;
 
