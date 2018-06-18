@@ -16,53 +16,53 @@ angular.module('wib', []).component('wib', {
             }
 
             this.reload = function () {
-                let wib0_slot1_femb1_1v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.1V5.V");
-                let wib0_slot1_femb1_1v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.1V5.I");
-                let wib0_slot1_femb1_2v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V5.V");
-                let wib0_slot1_femb1_2v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V5.I");
-                let wib0_slot1_femb1_2v8_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V8.V");
-                let wib0_slot1_femb1_2v8_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V8.I");
-                let wib0_slot1_femb1_3v6_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.3V6.V");
-                let wib0_slot1_femb1_3v6_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.3V6.I");
-                let wib0_slot1_femb1_bias_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.BIAS_V");
-                let wib0_slot1_femb1_bias_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.BIAS_I");
-                let wib0_slot1_femb1_temp = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB1.TEMP");
+                let wib0_slot1_femb1_1v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.1V5.V");
+                let wib0_slot1_femb1_1v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.1V5.I");
+                let wib0_slot1_femb1_2v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V5.V");
+                let wib0_slot1_femb1_2v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V5.I");
+                let wib0_slot1_femb1_2v8_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V8.V");
+                let wib0_slot1_femb1_2v8_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.2V8.I");
+                let wib0_slot1_femb1_3v6_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.3V6.V");
+                let wib0_slot1_femb1_3v6_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.3V6.I");
+                let wib0_slot1_femb1_bias_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.BIAS_V");
+                let wib0_slot1_femb1_bias_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB1.BIAS_I");
+                let wib0_slot1_femb1_temp = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB1.TEMP");
 
-                let wib0_slot1_femb2_1v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.1V5.V");
-                let wib0_slot1_femb2_1v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.1V5.I");
-                let wib0_slot1_femb2_2v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V5.V");
-                let wib0_slot1_femb2_2v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V5.I");
-                let wib0_slot1_femb2_2v8_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V8.V");
-                let wib0_slot1_femb2_2v8_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V8.I");
-                let wib0_slot1_femb2_3v6_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.3V6.V");
-                let wib0_slot1_femb2_3v6_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.3V6.I");
-                let wib0_slot1_femb2_bias_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.BIAS_V");
-                let wib0_slot1_femb2_bias_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.BIAS_I");
-                let wib0_slot1_femb2_temp = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB2.TEMP");
+                let wib0_slot1_femb2_1v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.1V5.V");
+                let wib0_slot1_femb2_1v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.1V5.I");
+                let wib0_slot1_femb2_2v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V5.V");
+                let wib0_slot1_femb2_2v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V5.I");
+                let wib0_slot1_femb2_2v8_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V8.V");
+                let wib0_slot1_femb2_2v8_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.2V8.I");
+                let wib0_slot1_femb2_3v6_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.3V6.V");
+                let wib0_slot1_femb2_3v6_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.3V6.I");
+                let wib0_slot1_femb2_bias_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.BIAS_V");
+                let wib0_slot1_femb2_bias_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB2.BIAS_I");
+                let wib0_slot1_femb2_temp = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB2.TEMP");
 
-                let wib0_slot1_femb3_1v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.1V5.V");
-                let wib0_slot1_femb3_1v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.1V5.I");
-                let wib0_slot1_femb3_2v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V5.V");
-                let wib0_slot1_femb3_2v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V5.I");
-                let wib0_slot1_femb3_2v8_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V8.V");
-                let wib0_slot1_femb3_2v8_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V8.I");
-                let wib0_slot1_femb3_3v6_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.3V6.V");
-                let wib0_slot1_femb3_3v6_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.3V6.I");
-                let wib0_slot1_femb3_bias_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.BIAS_V");
-                let wib0_slot1_femb3_bias_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.BIAS_I");
-                let wib0_slot1_femb3_temp = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB3.TEMP");
+                let wib0_slot1_femb3_1v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.1V5.V");
+                let wib0_slot1_femb3_1v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.1V5.I");
+                let wib0_slot1_femb3_2v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V5.V");
+                let wib0_slot1_femb3_2v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V5.I");
+                let wib0_slot1_femb3_2v8_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V8.V");
+                let wib0_slot1_femb3_2v8_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.2V8.I");
+                let wib0_slot1_femb3_3v6_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.3V6.V");
+                let wib0_slot1_femb3_3v6_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.3V6.I");
+                let wib0_slot1_femb3_bias_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.BIAS_V");
+                let wib0_slot1_femb3_bias_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB3.BIAS_I");
+                let wib0_slot1_femb3_temp = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB3.TEMP");
 
-                let wib0_slot1_femb4_1v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.1V5.V");
-                let wib0_slot1_femb4_1v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.1V5.I");
-                let wib0_slot1_femb4_2v5_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V5.V");
-                let wib0_slot1_femb4_2v5_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V5.I");
-                let wib0_slot1_femb4_2v8_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V8.V");
-                let wib0_slot1_femb4_2v8_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V8.I");
-                let wib0_slot1_femb4_3v6_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.3V6.V");
-                let wib0_slot1_femb4_3v6_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.3V6.I");
-                let wib0_slot1_femb4_bias_v = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.BIAS_V");
-                let wib0_slot1_femb4_bias_i = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.BIAS_I");
-                let wib0_slot1_femb4_temp = $http.get("php-db-conn/wib.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB4.TEMP");
+                let wib0_slot1_femb4_1v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.1V5.V");
+                let wib0_slot1_femb4_1v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.1V5.I");
+                let wib0_slot1_femb4_2v5_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V5.V");
+                let wib0_slot1_femb4_2v5_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V5.I");
+                let wib0_slot1_femb4_2v8_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V8.V");
+                let wib0_slot1_femb4_2v8_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.2V8.I");
+                let wib0_slot1_femb4_3v6_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.3V6.V");
+                let wib0_slot1_femb4_3v6_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.3V6.I");
+                let wib0_slot1_femb4_bias_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.BIAS_V");
+                let wib0_slot1_femb4_bias_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.BIAS_I");
+                let wib0_slot1_femb4_temp = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB4.TEMP");
 
                 let temp5 = $http.get('php-db-conn/cryostat.conn.timestamp.php');
                 $q.all([wib0_slot1_femb1_1v5_v, wib0_slot1_femb1_1v5_i, wib0_slot1_femb1_2v5_v, wib0_slot1_femb1_2v5_i, wib0_slot1_femb1_2v8_v, wib0_slot1_femb1_2v8_i, wib0_slot1_femb1_3v6_v, wib0_slot1_femb1_3v6_i, wib0_slot1_femb1_bias_v, wib0_slot1_femb1_bias_i, wib0_slot1_femb1_temp,

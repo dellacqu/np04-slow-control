@@ -8,11 +8,11 @@ angular.module('zmonitor', []).component('zmonitor', {
         let self = this;
 
         this.reload = function () {
-            let temp0 = $http.get("php-db-conn/zmonitor.conn.php?elemId=NP04_DCS_01:gizmo.RES");
-            let temp1 = $http.get("php-db-conn/zmonitor.conn.php?elemId=NP04_DCS_01:gizmo.TH");
-            let temp2 = $http.get("php-db-conn/zmonitor.conn.php?elemId=NP04_DCS_01:gizmo.mag");
-            let temp3 = $http.get("php-db-conn/zmonitor.conn.php?elemId=NP04_DCS_01:gizmo.I");
-            let temp4 = $http.get("php-db-conn/zmonitor.conn.php?elemId=NP04_DCS_01:gizmo.Q");
+            let temp0 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.RES");
+            let temp1 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.TH");
+            let temp2 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.mag");
+            let temp3 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.I");
+            let temp4 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.Q");
             let temp5 = $http.get('php-db-conn/cryostat.conn.timestamp.php');
             $q.all([temp0, temp1, temp2, temp3, temp4, temp5]).then(function (resultArray) {
                 self.NP04_DCS_01_gizmo_RES = resultArray[0].data.records;
