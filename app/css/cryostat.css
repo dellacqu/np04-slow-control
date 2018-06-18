@@ -94,3 +94,47 @@
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 2.0vmin;
 }
+
+#bellegarde {
+    position:fixed;
+    left: 57vw;
+    top: 55vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+    background-color: #333333;
+}
+
+#jura {
+    position:fixed;
+    left: 35vw;
+    top: 55vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+    background-color: #333333;
+}
+
+#lausanne {
+    position:fixed;
+    left: 32vw;
+    top: 30vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+    background-color: #333333;
+}
+
+#saleve {
+    position:fixed;
+    left: 60vw;
+    top: 33vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+    background-color: #333333;
+}

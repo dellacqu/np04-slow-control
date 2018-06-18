@@ -161,10 +161,10 @@ angular.module('histogram', []).component('histogram', {
                         self.chart = barGraph;
 
                     } else {
-                        self.dayChanger(10);
+                        self.dayChanger(3);
                     }
                 }).catch(function onError(data) {
-                    self.dayChanger(10);
+                    self.dayChanger(3);
                 });
 
             $interval(this.reload, 15000);
