@@ -64,7 +64,7 @@ angular.module('wib', []).component('wib', {
                 let wib0_slot1_femb4_bias_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot" + self.wibId + ".POWER.FEMB4.BIAS_I");
                 let wib0_slot1_femb4_temp = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.wibId + "_slot" + self.wibId + ".POWER.FEMB4.TEMP");
 
-                let temp5 = $http.get('php-db-conn/cryostat.conn.timestamp.php');
+                let temp5 = $http.get('php-db-conn/elementName.conn.timestamp.php');
                 $q.all([wib0_slot1_femb1_1v5_v, wib0_slot1_femb1_1v5_i, wib0_slot1_femb1_2v5_v, wib0_slot1_femb1_2v5_i, wib0_slot1_femb1_2v8_v, wib0_slot1_femb1_2v8_i, wib0_slot1_femb1_3v6_v, wib0_slot1_femb1_3v6_i, wib0_slot1_femb1_bias_v, wib0_slot1_femb1_bias_i, wib0_slot1_femb1_temp,
                     wib0_slot1_femb2_1v5_v, wib0_slot1_femb2_1v5_i, wib0_slot1_femb2_2v5_v, wib0_slot1_femb2_2v5_i, wib0_slot1_femb2_2v8_v, wib0_slot1_femb2_2v8_i, wib0_slot1_femb2_3v6_v, wib0_slot1_femb2_3v6_i, wib0_slot1_femb2_bias_v, wib0_slot1_femb2_bias_i, wib0_slot1_femb2_temp,
                     wib0_slot1_femb3_1v5_v, wib0_slot1_femb3_1v5_i, wib0_slot1_femb3_2v5_v, wib0_slot1_femb3_2v5_i, wib0_slot1_femb3_2v8_v, wib0_slot1_femb3_2v8_i, wib0_slot1_femb3_3v6_v, wib0_slot1_femb3_3v6_i, wib0_slot1_femb3_bias_v, wib0_slot1_femb3_bias_i, wib0_slot1_femb3_temp,

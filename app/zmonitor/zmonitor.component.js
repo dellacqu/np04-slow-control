@@ -13,7 +13,7 @@ angular.module('zmonitor', []).component('zmonitor', {
             let temp2 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.mag");
             let temp3 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.I");
             let temp4 = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:gizmo.Q");
-            let temp5 = $http.get('php-db-conn/cryostat.conn.timestamp.php');
+            let temp5 = $http.get('php-db-conn/elementName.conn.timestamp.php');
             $q.all([temp0, temp1, temp2, temp3, temp4, temp5]).then(function (resultArray) {
                 self.NP04_DCS_01_gizmo_RES = resultArray[0].data.records;
                 self.NP04_DCS_01_gizmo_TH = resultArray[1].data.records;

@@ -65,7 +65,7 @@ angular.module('mpodpd', []).component('mpodpd', {
             let mpodpd0_slot5_3v6_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_mpodpd" + self.mpodpdId + "_slot5.POWER.WIB.3V6.I");
             let mpodpd0_slot5_5v_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_mpodpd" + self.mpodpdId + "_slot5.POWER.WIB.5V.V");
             let mpodpd0_slot5_5v_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_mpodpd" + self.mpodpdId + "_slot5.POWER.WIB.5V.I");
-            let temp5 = $http.get('php-db-conn/cryostat.conn.timestamp.php');
+            let temp5 = $http.get('php-db-conn/elementName.conn.timestamp.php');
             $q.all([mpodpd0_slot1_temp, mpodpd0_slot1_vcc, mpodpd0_slot1_1v8_v, mpodpd0_slot1_1v8_i, mpodpd0_slot1_2v8_v, mpodpd0_slot1_2v8_i, mpodpd0_slot1_3v6_v, mpodpd0_slot1_3v6_i, mpodpd0_slot1_5v_v, mpodpd0_slot1_5v_i,
                 mpodpd0_slot2_temp, mpodpd0_slot2_vcc, mpodpd0_slot2_1v8_v, mpodpd0_slot2_1v8_i, mpodpd0_slot2_2v8_v, mpodpd0_slot2_2v8_i, mpodpd0_slot2_3v6_v, mpodpd0_slot2_3v6_i, mpodpd0_slot2_5v_v, mpodpd0_slot2_5v_i,
                 mpodpd0_slot3_temp, mpodpd0_slot3_vcc, mpodpd0_slot3_1v8_v, mpodpd0_slot3_1v8_i, mpodpd0_slot3_2v8_v, mpodpd0_slot3_2v8_i, mpodpd0_slot3_3v6_v, mpodpd0_slot3_3v6_i, mpodpd0_slot3_5v_v, mpodpd0_slot3_5v_i,

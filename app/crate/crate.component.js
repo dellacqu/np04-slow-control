@@ -65,7 +65,7 @@ angular.module('crate', []).component('crate', {
             let crate0_slot5_3v6_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot5.POWER.WIB.3V6.I");
             let crate0_slot5_5v_v = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot5.POWER.WIB.5V.V");
             let crate0_slot5_5v_i = $http.get("php-db-conn/elementName.conn.php?elemId=NP04_DCS_01:WIB_crate" + self.crateId + "_slot5.POWER.WIB.5V.I");
-            let temp5 = $http.get('php-db-conn/cryostat.conn.timestamp.php');
+            let temp5 = $http.get('php-db-conn/elementName.conn.timestamp.php');
             $q.all([crate0_slot1_temp, crate0_slot1_vcc, crate0_slot1_1v8_v, crate0_slot1_1v8_i, crate0_slot1_2v8_v, crate0_slot1_2v8_i, crate0_slot1_3v6_v, crate0_slot1_3v6_i, crate0_slot1_5v_v, crate0_slot1_5v_i,
                 crate0_slot2_temp, crate0_slot2_vcc, crate0_slot2_1v8_v, crate0_slot2_1v8_i, crate0_slot2_2v8_v, crate0_slot2_2v8_i, crate0_slot2_3v6_v, crate0_slot2_3v6_i, crate0_slot2_5v_v, crate0_slot2_5v_i,
                 crate0_slot3_temp, crate0_slot3_vcc, crate0_slot3_1v8_v, crate0_slot3_1v8_i, crate0_slot3_2v8_v, crate0_slot3_2v8_i, crate0_slot3_3v6_v, crate0_slot3_3v6_i, crate0_slot3_5v_v, crate0_slot3_5v_i,
