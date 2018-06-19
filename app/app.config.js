@@ -47,7 +47,7 @@ config(['$locationProvider', '$routeProvider',
         when('/gauges', {
             template: '<gauges></gauges>'
         }).
-        whrn('/top', {
+        when('/top', {
             template: '<top></top>'
         }).
         otherwise('/');
