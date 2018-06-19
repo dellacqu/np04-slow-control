@@ -11,48 +11,8 @@
     display: block;
     position: fixed;
     top: 30vh;
-    left: 28vw;
-    width: 38vmin;
-}
-
-#outer_pressure {
-    position: fixed;
-    left: 6vw;
-    top: 20vh;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 2.0vmin;
-}
-
-#inner_pressure {
-    position:fixed;
-    left: 6vw;
-    top: 40vh;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 2.0vmin;
-}
-
-#inner_pressure_2 {
-    position:fixed;
-    left: 4.5vw;
-    top: 55vh;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 2.0vmin;
-}
-
-#ambient_diff {
-    position: fixed;
-    left: 5.0vw;
-    top: 70vh;
-    text-align: right;
-    color: gray;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 2.0vmin;
+    left: 20vw;
+    width: 65vmin;
 }
 
 #ambient {
@@ -65,32 +25,57 @@
     font-size: 2.0vmin;
 }
 
-#penetration_pipe {
-    position: fixed;
-    right: 7vw;
+#bellegarde {
+    position:fixed;
+    left: 62vw;
     top: 65vh;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 2.0vmin;
+    background-color: #333333;
 }
 
-#beam_plug {
-    position: fixed;
+#jura {
+    position:fixed;
     left: 30vw;
-    top: 7vh;
+    top: 65vh;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 2.0vmin;
+    background-color: #333333;
 }
 
-#lesker_vacuum_gauge {
-    position: fixed;
-    left: 45vw;
-    top: 7vh;
+#lausanne {
+    position:fixed;
+    left: 27vw;
+    top: 30vh;
     text-align: right;
     color: gray;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 2.0vmin;
+    background-color: #333333;
+}
+
+#saleve {
+    position:fixed;
+    left: 63vw;
+    top: 35vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+    background-color: #333333;
+}
+
+#topSide {
+    position:fixed;
+    left: 48vw;
+    top: 43vh;
+    text-align: right;
+    color: gray;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.0vmin;
+    background-color: #333333;
 }

@@ -15,5 +15,6 @@ angular.module('ng04SlowControlApp', [
     'jura',
     'lausanne',
     'saleve',
-    'gauges'
+    'gauges',
+    'top'
 ]);
