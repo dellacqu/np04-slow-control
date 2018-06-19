@@ -50,6 +50,12 @@ config(['$locationProvider', '$routeProvider',
         when('/top', {
             template: '<top></top>'
         }).
+        when('/tInternal', {
+            template: '<tInternal></tInternal>'
+        }).
+        when('/purity', {
+            template: '<purity></purity>'
+        }).
         otherwise('/');
     }
 ]);

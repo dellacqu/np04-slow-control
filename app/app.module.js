@@ -16,5 +16,7 @@ angular.module('ng04SlowControlApp', [
     'lausanne',
     'saleve',
     'gauges',
-    'top'
+    'top',
+    'tInternal',
+    'purity'
 ]);
