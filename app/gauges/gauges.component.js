@@ -1,8 +1,8 @@
 'use strict';
-angular.module('cryostatOld', []).component('cryostatOld', {
-    templateUrl: 'cryostatOld/cryostatOld.template.html',
-    controller: function cryostatOldController($http, $q, $interval) {
-        this.pageTitle = "NP04 cryostatOld";
+angular.module('gauges', []).component('gauges', {
+    templateUrl: 'gauges/gauges.template.html',
+    controller: function gaugesController($http, $q, $interval) {
+        this.pageTitle = "NP04 gauges";
         this.natalie = 1;
         let self = this;
 

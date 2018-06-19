@@ -11,10 +11,9 @@ angular.module('ng04SlowControlApp', [
     'mpodpd',
     'camera',
     'cryostat',
-    'cryostatGauges',
-    'cryostatOld',
     'bellegarde',
     'jura',
     'lausanne',
-    'saleve'
+    'saleve',
+    'gauges'
 ]);

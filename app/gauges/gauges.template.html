@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="css/cryostatOld.css">
+<link rel="stylesheet" href="css/gauges.css">
 <div class="container">
     <div id="pageTitle">{{$ctrl.pageTitle}}</div>
-    <img id="detector" src="img/cryostat.png" alt="cryostatOld"/>
+    <img id="detector" src="img/cryostat.png" alt="gauges"/>
 
     <div id="outer_pressure">Outer pressure ABS:<br/><a target="_blank" href="#!/histogram/NP04_PT0104AI"><span class="value">{{ $ctrl.NP04_PT0104AI[0].Mnish | number: 1 }} mbar</span></a><br/>Outer pressure Diff:<br/><a target="_blank" href="#!/histogram/NP04_PT0105AI"><span class="value">{{ $ctrl.NP04_PT0105AI[0].Mnish | number: 1 }} mbar</span></a></div>
     <div id="inner_pressure">Inner pressure ABS:<br/><a target="_blank" href="#!/histogram/NP04_PT0100AI"><span class="value">{{ $ctrl.NP04_PT0100AI[0].Mnish | number: 1 }} mbar</span></a><br/>Inner pressure Diff:<br/><a target="_blank" href="#!/histogram/NP04_PT0101AI"><span class="value">{{ $ctrl.NP04_PT0101AI[0].Mnish | number: 1 }} mbar</span></a></div>

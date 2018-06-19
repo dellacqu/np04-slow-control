@@ -2,7 +2,7 @@
 angular.module('inside', []).component('inside', {
     templateUrl: 'inside/inside.template.html',
     controller: function insideController($http, $q, $interval) {
-        this.pageTitle = "NP04 Membranes";
+        this.pageTitle = "NP04 T-Insulation";
         this.natalie = 1;
         this.TT0101 = "";
         let self = this;
