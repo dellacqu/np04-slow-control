@@ -10,9 +10,9 @@
 #detector {
     display: block;
     position: fixed;
-    top: 30vh;
+    top: 15vh;
     left: 17vw;
-    width: 65%;
+    width: 75%;
 }
 
 #outer_pressure {

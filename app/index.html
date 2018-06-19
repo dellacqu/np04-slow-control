@@ -13,7 +13,7 @@
     <script src="dependencies/csv-download.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.min.js"></script>
     <script src="dependencies/ng-csv.js"></script>
-    <script src="dependencies/Chart.min.js"></script>
+    <script src="dependencies/Chart.js"></script>
     <script src="dependencies/VLCPlayer.js"></script>
     <script src="dependencies/chartjs-plugin-zoom.js"></script>
     <script src="dependencies/hammer.js"></script>
@@ -23,6 +23,8 @@
     <script src="home/home.component.js"></script>
     <script src="cryostat/cryostat.module.js"></script>
     <script src="cryostat/cryostat.component.js"></script>
+    <script src="cryostatGauges/cryostat_gauges.module.js"></script>
+    <script src="cryostatGauges/cryostat_gauges.component.js"></script>
     <script src="inside/inside.module.js"></script>
     <script src="inside/inside.component.js"></script>
     <script src="histogram/histogram.module.js"></script>
@@ -72,7 +74,9 @@
 <div id="menu" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#!/">Home</a>
-    <a href="#!/cryostat">Cryostat</a><img src="img/down-arrow.png" onclick="submenu()"/>
+    <a href="#!/cryostat">NP04 Cryostat</a>
+    <a href="#!/cryostatGauges">NP04 Gauges</a>
+    <img src="img/down-arrow.png" onclick="submenu()"/>
     <span id="submenu">
             <ul>
               <a href="#!/jura">Jura side</a>

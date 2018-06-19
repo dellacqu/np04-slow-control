@@ -11,6 +11,9 @@ config(['$locationProvider', '$routeProvider',
         when('/cryostat', {
             template: '<cryostat></cryostat>'
         }).
+        when('/cryostatGauges', {
+            template: '<cryostatGauges></cryostatGauges>'
+        }).
         when('/inside', {
             template: '<inside></inside>'
         }).
