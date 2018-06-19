@@ -4,7 +4,7 @@ angular.module('mpodpd', []).component('mpodpd', {
     controller: ['$routeParams', '$q', '$http', '$window', '$interval',
         function mpodpdController($routeParams, $q, $http, $window, $interval) {
         this.mpodpdId = $routeParams.mpodpdId;
-        this.pageTitle = "Photon detectors";
+        this.pageTitle = "NP04 Photon detectors";
         this.natalie = 1;
         this.TT0101 = "";
         let self = this;
