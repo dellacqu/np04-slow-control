@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="css/cryostat.css">
+<link rel="stylesheet" href="css/cryostatOld.css">
 <div class="container">
     <div id="pageTitle">{{$ctrl.pageTitle}}</div>
-    <img id="detector" src="img/cryostat.png" alt="Cryostat"/>
+    <img id="detector" src="img/cryostat.png" alt="cryostatOld"/>
 
     <div id="outer_pressure">Outer pressure ABS:<br/><a target="_blank" href="#!/histogram/NP04_PT0104AI"><span class="value">{{ $ctrl.NP04_PT0104AI[0].Mnish | number: 1 }} mbar</span></a><br/>Outer pressure Diff:<br/><a target="_blank" href="#!/histogram/NP04_PT0105AI"><span class="value">{{ $ctrl.NP04_PT0105AI[0].Mnish | number: 1 }} mbar</span></a></div>
     <div id="inner_pressure">Inner pressure ABS:<br/><a target="_blank" href="#!/histogram/NP04_PT0100AI"><span class="value">{{ $ctrl.NP04_PT0100AI[0].Mnish | number: 1 }} mbar</span></a><br/>Inner pressure Diff:<br/><a target="_blank" href="#!/histogram/NP04_PT0101AI"><span class="value">{{ $ctrl.NP04_PT0101AI[0].Mnish | number: 1 }} mbar</span></a></div>
@@ -11,10 +11,6 @@
     <div id="timestamp_label">Timestamp:<br/><span id="timestamp">{{ $ctrl.timestamp[0].Mnish }}</span></div>
     <div id="ambient">Humidity:<br/><a target="_blank" href="#!/histogram/NP04_MHT0100AI"><span class="value">{{ $ctrl.NP04_MHT0100AI[0].Mnish | number: 1 }} %</span></a><br/>Ambient temperature:<br/><a target="_blank" href="#!/histogram/NP04_TT0100AI"><span class="value">{{ $ctrl.NP04_TT0100AI[0].Mnish | number: 1 }} &#8451;</span></a><br/>Ambient pressure:<br/><a target="_blank" href="#!/histogram/NP04_PT0106AI"><span class="value">{{ $ctrl.NP04_PT0106AI[0].Mnish * 1000 | number: 1 }} mbar</span></a></div>
     <div id="inner_pressure_2">Inner Pressure ABS 2:<br/><a target="_blank" href="#!/histogram/NP04_PT0102AI"><span class="value">{{ $ctrl.NP04_PT0102AI[0].Mnish | number: 1 }} mbar</span></a><br/>Inner Pressure Diff 2:<br/><a target="_blank" href="#!/histogram/NP04_PT0103AI"><span class="value">{{ $ctrl.NP04_PT0103AI[0].Mnish | number: 1 }} mbar</span></a></div>
-    <div id="bellegarde"><a href="#!/bellegarde">Bellegarde Side</a></div>
-    <div id="jura"><a href="#!/jura">Jura Side</a></div>
-    <div id="lausanne"><a href="#!/lausanne">Lausanne Side</a></div>
-    <div id="saleve"><a href="#!/saleve">Saleve Side</a></div>
     <div id="penetration_pipe">
         <table id="penetration">
             <tr>

@@ -12,6 +12,7 @@ angular.module('ng04SlowControlApp', [
     'camera',
     'cryostat',
     'cryostatGauges',
+    'cryostatOld',
     'bellegarde',
     'jura',
     'lausanne',

@@ -47,6 +47,9 @@ config(['$locationProvider', '$routeProvider',
         when('/saleve', {
             template: '<saleve></saleve>'
         }).
+        when('/cryostatOld', {
+            template: '<cryostatOld></cryostatOld>'
+        }).
         otherwise('/');
     }
 ]);
