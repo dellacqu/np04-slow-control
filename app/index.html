@@ -56,20 +56,12 @@
     <script>
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
         function openNav() {
-            document.getElementById("menu").style.width = "250px";
+            document.getElementById("menu").style.width = "30vw";
         }
 
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
         function closeNav() {
             document.getElementById("menu").style.width = "0";
-        }
-
-        function submenu() {
-            if (document.getElementById("submenu").style.display == "none") {
-                document.getElementById("submenu").style.display = "block";
-            } else {
-                document.getElementById("submenu").style.display = "none";
-            }
         }
 
     </script>
@@ -82,23 +74,13 @@
     <a href="#!/">Home</a>
     <a href="#!/cryostat">NP04 Cryostat</a>
     <a href="#!/gauges">NP04 Gauges</a>
-    <img src="img/down-arrow.png" onclick="submenu()"/>
-    <span id="submenu">
-            <ul>
-              <a href="#!/jura">Jura side</a>
-              <a href="#!/lausanne">Lausanne side</a>
-              <a href="#!/saleve">Saleve side</a>
-              <a href="#!/bellegarde">Bellegarde side</a>
-              <a href="#!/top">Top side</a>
-          </ul>
-              </span>
     <a href="#!/inside">NP04 T-Insulation</a>
+    <a href="#!/tInternal">NP04 T-Internal</a>
+    <a href="#!/purity">NP04 Purity Monitors</a>
+    <a href="#!/camera">NP04 Cameras</a>
     <a href="#!/zmonitor">NP04 Z-monitor</a>
     <a href="#!/crate/1">NP04 WIB crates</a>
     <a href="#!/mpodpd">NP04 Photon Detectors</a>
-    <a href="#!/camera">NP04 Cameras</a>
-    <a href="#!/tInternal">NP04 T-Internal</a>
-    <a href="#!/purity">NP04 Purity Monitors</a>
     <a href="mailto:George.Salukvadze@cern.ch">Contact</a>
 
 </div>

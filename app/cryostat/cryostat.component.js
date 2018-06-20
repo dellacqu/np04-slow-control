@@ -12,7 +12,7 @@ angular.module('cryostat', []).component('cryostat', {
             let temp2 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_PT0100AI");
             let temp3 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_PT0101AI");
             let temp4 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_2PT0100AIR");
-            let temp5 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_2TT0100AIR");
+            let temp5 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_2PT0100AI");
             let temp6 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_MHT0100AI");
             let temp7 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_TT0100AI");
             let temp8 = $http.get("php-db-conn/alias.conn.php?elemId=NP04_PT0106AI");
@@ -33,7 +33,7 @@ angular.module('cryostat', []).component('cryostat', {
                 self.NP04_PT0100AI = resultArray[2].data.records;
                 self.NP04_PT0101AI = resultArray[3].data.records;
                 self.NP04_2PT0100AIR = resultArray[4].data.records;
-                self.NP04_2TT0100AIR = resultArray[5].data.records;
+                self.NP04_2PT0100AI = resultArray[5].data.records;
                 self.NP04_MHT0100AI = resultArray[6].data.records;
                 self.NP04_TT0100AI = resultArray[7].data.records;
                 self.NP04_PT0106AI = resultArray[8].data.records;

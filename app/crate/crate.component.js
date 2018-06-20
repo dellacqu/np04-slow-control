@@ -128,6 +128,6 @@ angular.module('crate', []).component('crate', {
         };
 
         this.reload();
-        $interval(this.reload, 600000);
+        $interval(this.reload, 15000);
     }]
 });

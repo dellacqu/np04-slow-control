@@ -26,6 +26,6 @@ angular.module('zmonitor', []).component('zmonitor', {
         };
 
         this.reload();
-        $interval(this.reload, 600000);
+        $interval(this.reload, 15000);
     }
 });
